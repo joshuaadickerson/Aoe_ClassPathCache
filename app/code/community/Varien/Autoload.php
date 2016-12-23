@@ -294,14 +294,13 @@ class Varien_Autoload
 
         $content .= '];';
 
-        return $this->_writeCacheFile($content);
+        $this->_writeCacheFile($content);
     }
 
     /**
      * Write the cache to disk
      *
      * @param  string $content
-     * @return int
      */
     protected function _writeCacheFile($content)
     {
